@@ -1,0 +1,244 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+font-family: 'Rubik Puddles',
+cursive;
+
+
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    background: #23242a;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.car-login {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100hv;
+
+}
+
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 370px;
+    height: 450px;
+    border-radius: 50px 5px;
+    background: #1c1c1c;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+.form-container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background: linear-gradient(60deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+
+.form-container::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background: linear-gradient(60deg, transparent, #d9138a, #d9138a);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-family: 'Rubik Puddles', cursive;
+    color: pink;
+    justify-self: center;
+    text-align: center;
+}
+
+p {
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+label {
+    color: whitesmoke;
+    padding: 10px 0 10px;
+
+
+}
+
+form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 50px 5px;
+    background: #28292d;
+    z-index: 10;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#password {
+    background: transparent;
+    height: 30px;
+    color: #d9138a;
+}
+
+#new-password {
+    background: transparent;
+    height: 30px;
+     color: #d9138a;
+}
+
+input[type="submit"] {
+    outline: 2px ridge #d9138a;
+    border-radius: 2rem;
+    margin-top: 20px;
+    font-weight: 900;
+    cursor: pointer;
+background: transparent;
+    color: whitesmoke;
+}
+*/
+
+
+/*General*/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #fd4e94;
+    text-decoration: none;
+}
+
+/*Create*/
+
+.create {
+    width: 100%;
+    max-width: 785px;
+    min-width: 320px;
+    border-radius: 15px;
+    background-color: #045d90;
+    padding: 3rem;
+}
+
+
+/*login*/
+
+.login {
+    text-align: right;
+}
+
+/*content*/
+
+.content h1 {
+    font-size: 26px;
+    text-align: center;
+
+
+}
+
+.content {
+    width: 65%;
+    margin: 3rem auto;
+}
+
+.content p {
+    line-height: 26px;
+    text-align: center;
+}
+
+.form {
+    margin-top: 2rem;
+}
+
+.form label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: .3rem;
+}
+
+.form input {
+    display: block;
+    border: none;
+    width: 100%;
+}
+
+/*.form input:not([type="submit"]) tambien se puede seleccionar asi */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+    background: transparent;
+    border: 1px solid #171617;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 18px;
+}
+
+.form input[type="submit"] {
+    border-radius: 5px;
+    background-color: #fd4e94;
+    color: white;
+    font-weight: bold;
+    padding: 2rem 3rem;
+    cursor: pointer;
+
+}
+
+.legal {
+    border-radius: 10px;
+    background-color: #2f6e92;
+    padding: 2rem;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+}
